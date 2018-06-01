@@ -1,0 +1,5 @@
+>>> import validators
+>>> validators.url("http://usr:pwd@localhost")
+True
+>>> validators.url("http://username:password@192.168.10.10:4010/")
+True
