@@ -1,0 +1,34 @@
+Polyglot library
+
+>>> from polyglot.detect import Detector
+
+>>> english= "You are a noob."
+
+>>> detector = Detector(english)
+
+>>> print(detector.language)
+name: English     code: en       confidence:  93.0 read bytes:  1570
+
+Langdetect
+
+>>> from langdetect import detect
+
+>>> detect("You are a noob.")
+
+'so'
+
+>>> detect("b d")                               
+'so'
+>>> detect("War doesn't show who's right, just who's left.")
+
+'en'
+
+>>> detect("Bonjour, Mesdames.")                'fr'
+
+>>> detect("You are a noob")
+
+'fr'
+
+>>> detect("welcome!")
+
+'nl'
